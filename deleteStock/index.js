@@ -32,7 +32,7 @@ exports.handler = async(event) => {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
       },
-      body: "Success"
+      body: JSON.stringify({"error": false})
     };
     return response;
   }
